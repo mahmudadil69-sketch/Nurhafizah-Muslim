@@ -16,7 +16,7 @@
 
 <body>
 
-<section id="mempelai" class="mempelai py-5 scroll-animate">
+<section id="undangan" class="undangan scroll-animate">
     <div class="content d-flex flex-column align-items-center text-center">
     <p class="save-the-date">Save The Date</p>
     <img src="img/Pengantin HM.png" class="pengantin">
@@ -39,7 +39,8 @@
     </a>
 </div>
 
-<!-- NAVBAR BOTTOM -->
+    </div>
+</section>
 
 <div class="bottom-nav">
     <a href="#undangan" class="nav-item active">
@@ -71,8 +72,6 @@
         <p>Penutup</p>
     </a>
 </div>
-    </div>
-</section>
 
 <section id="mempelai" class="mempelai py-5 scroll-animate">
   <div class="container">
@@ -315,10 +314,10 @@
 
     <img src="img/Pengantin HM.png" alt="Gambar mempelai" class="pengantin mb-3">
     <h1>Nurhafizah & Muslim</h1>
-    <h2>Keluarha Besar Mempelai Wanita</h2>
-    <h3>Bapak Lukman &<br>Ibu Maryam</h3>
     <h2>Keluarha Besar Mempelai Peria</h2>
-    <h3>Bapak Ramli &<br>Ibu Radiah</h3>
+    <h3>Bapak Kadir Dg Dongko & <br> Ibu Kamisa Dg Ngasseng (Rahimahallah)</h3>
+    <h2>Keluarha Besar Mempelai Wanita</h2>
+    <h3>Bapak Agus Salim & <br> Ibu Rusnawati Alimuddin (Rahimahallah)</h3>
 
     <div class="penutup-wrap">
     <div class="penutup-card">
@@ -416,6 +415,7 @@
     }
 
     const revealItems = document.querySelectorAll('section.scroll-animate');
+
     if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -427,6 +427,22 @@
         }, { threshold: 0.18 });
 
         revealItems.forEach((item) => revealObserver.observe(item));
+
+        const navLinks = document.querySelectorAll('.bottom-nav .nav-item');
+        const scrollSections = document.querySelectorAll('section[id]');
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach((link) => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                    });
+                }
+            });
+        }, { threshold: 0.55 });
+
+        scrollSections.forEach((section) => sectionObserver.observe(section));
     } else {
         revealItems.forEach((item) => item.classList.add('is-visible'));
     }
