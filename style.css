@@ -281,7 +281,6 @@ body{
     margin-bottom: 5px;
     display: inline-block;
 }
-
 .bottom-nav {
     max-width: 420px; /* biar tetap kecil walau layar besar */
 }
@@ -293,6 +292,18 @@ body{
 .section {
     padding: 60px 20px;
     text-align: center;
+}
+
+section.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.75s ease, transform 0.75s ease;
+    will-change: opacity, transform;
+}
+
+section.scroll-animate.is-visible {
+    opacity: 1;
+    transform: none;
 }
 
 .acara {
