@@ -970,8 +970,9 @@ button {
 }
 
 .music-btn.active {
-    background: #c08a8a;
-    transform: scale(1.1);
+    background: var (--pink);
+    color: #ffffff
+    transform: nano);
 }
 
 /* Rapikan ulang layout setelah dekorasi */
