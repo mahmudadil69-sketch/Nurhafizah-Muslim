@@ -16,7 +16,7 @@
 
 <body>
 
-<section id="undangan" class="undangan">
+<section id="mempelai" class="mempelai py-5 scroll-animate">
     <div class="content d-flex flex-column align-items-center text-center">
     <p class="save-the-date">Save The Date</p>
     <img src="img/Pengantin HM.png" class="pengantin">
@@ -74,7 +74,7 @@
     </div>
 </section>
 
-<section id="mempelai" class="mempelai py-5">
+<section id="mempelai" class="mempelai py-5 scroll-animate">
   <div class="container">
 
     <!-- Ayat -->
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<section id="acara" class="section acara">
+<section id="acara" class="section acara scroll-animate">
     <div class="acara-pengantar">
         <p>
         Dengan segala kerendahan hati, kami mengundang Bapak/Ibu/Saudara/i
@@ -224,7 +224,7 @@
     </div>
 </section>
 
-<section id="adab" class="section adab">
+<section id="adab" class="section adab scroll-animate">
     <div class="adab-pengantar">
     <p>
         Sebagai bentuk ikhtiar dalam menhmga keberkahan acara ini, kami juga menyampaikan beberapa adab yang diharapkan dapat diperhatikan oleh para tamu undangan.
@@ -260,7 +260,7 @@
     </div>
 </section>
 
-<section id="ucapan" class="section ucapan">
+<section id="ucapan" class="section ucapan scroll-animate">
     <div class="ucapan-pengantar">
         <p>
             Kami sangat menghargai setiap doa dan ucapan baik yang diberikan untuk kami. 
@@ -306,7 +306,7 @@
 
 </section>
 
-<section id="penutup" class="section penutup">
+<section id="penutup" class="section penutup scroll-animate">
     <div class="penutup-pengantar">
         <p>
             Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
@@ -415,7 +415,7 @@
         });
     }
 
-    const revealItems = document.querySelectorAll('.adab-item, .penutup-wrap');
+    const revealItems = document.querySelectorAll('section.scroll-animate');
     if ('IntersectionObserver' in window) {
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -424,7 +424,7 @@
                     revealObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.25 });
+        }, { threshold: 0.18 });
 
         revealItems.forEach((item) => revealObserver.observe(item));
     } else {
