@@ -687,7 +687,7 @@ button {
     box-sizing: border-box;
     padding: 72px clamp(34px, 8vw, 95px);
     color: #ffffff;
-    background: url('img/latar text.png') center/cover no-repeat;
+    background: url('img/Latar text.png') center/cover no-repeat;
     text-align: center;
     margin: -8rem 0 0;
     margin-bottom: 2rem;
