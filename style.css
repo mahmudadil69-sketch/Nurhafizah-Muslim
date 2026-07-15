@@ -202,7 +202,7 @@ body{
     font-size: 20px;
     text-align: center;
     margin: -0 !important;
-    background: url('img/latar text.png') center/cover no-repeat;
+    background: url('img/Latar text.png') center/cover no-repeat;
 }
 .row {
     margin-left: 0 !important;
@@ -465,7 +465,7 @@ button {
     box-sizing: border-box;
     padding: 72px clamp(34px, 8vw, 95px);
     color: #ffffff;
-    background: url('img/latar text.png') center/cover no-repeat;
+    background: url('img/Latar text.png') center/cover no-repeat;
     text-align: center;
 }
 
@@ -473,7 +473,7 @@ button {
     overflow-x: hidden;
     padding-top: 0;
     padding-bottom: 90px;
-    background: url('img/latar.png') center/cover no-repeat;
+    background: url('img/Latar.png') center/cover no-repeat;
     margin: -2rem 0;
 }
 
@@ -578,7 +578,7 @@ button {
     box-sizing: border-box;
     padding: 72px clamp(34px, 8vw, 95px);
     color: #ffffff;
-    background: url('img/latar text.png') center/cover no-repeat;
+    background: url('img/Latar text.png') center/cover no-repeat;
     text-align: center;
 }
 
@@ -597,7 +597,7 @@ button {
 }
 
 .nasehat-galeri {
-    background: url('img/latar.png') center/cover no-repeat;
+    background: url('img/Latar.png') center/cover no-repeat;
     padding: 28px 0 0;
     padding-bottom: 10rem;
 }
@@ -678,7 +678,7 @@ button {
 }
 
 #adab.adab {
-    background: url('img/latar.png') center/cover no-repeat;
+    background: url('img/Latar.png') center/cover no-repeat;
     padding: 60px 20px 90px;
     margin: -10rem;
 }
@@ -919,7 +919,7 @@ button {
     to {opacity: 1; transform: translateY(0);}
 }
 .penutup {
-    background: url('img/latar.png') center/cover no-repeat;
+    background: url('img/Latar.png') center/cover no-repeat;
     padding: 60px 20px 90px;
     margin: 0;
 }
